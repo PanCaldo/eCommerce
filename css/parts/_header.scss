@@ -1,20 +1,29 @@
 .header {
     &__top {
         padding: 16px 0;
+        @media (max-width: 525px){
+            flex-direction: column;
+        }
 
         @include dfcc;
 
-        &-left {
-            width: 35%;
-        }
+        //&-left {
+        //    width: 35%;
+        //}
 
-        &-right {
-            width: 20%;
-        }
+        //&-right {
+        //    width: 20%;
+        //}
 
         &-list {
             @include dfcc;
             @include anone;
+        }
+
+        &-listleft{
+            @media (max-width: 400px){
+                flex-direction: column;
+            }
         }
 
         &-item {
@@ -28,6 +37,7 @@
         &-link {
             text-decoration: none;
             color: $accent;
+            margin-right: 15px;
             &:hover {
                 color: darken($accent, 15%);
             }
@@ -42,6 +52,25 @@
         @include dfcc;
         padding-top: 40px;
         padding-bottom: 48px;
+        @media (max-width: 525px){
+            flex-direction: column;
+        }
+        @media (max-width: 400px){
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        &-logo{
+            @media (max-width: 800px){
+                padding-right: 15px;
+                width: 100%;
+            }
+            @media (max-width: 525px){
+                padding-right: 0;
+            }
+            
+
+        }
 
         &-list {
             padding: 0;
@@ -53,12 +82,19 @@
             @include dfcc;
             width: 100%;
             max-width: 500px;
-
             background: #f9f9f9;
             border: 1px solid #d1d1d1;
-
             border-radius: 12px;
+            @media (max-width: 800px){
+                margin-right: 15px;
+            }
+            @media (max-width: 525px){
+                margin-right: 0;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
         }
+
         &-select {
             border: none;
             font-family: Poppins;
@@ -71,6 +107,9 @@
             max-width: 130px;
             appearance: none;
             background: url(/img/Header/Vector.png) no-repeat right;
+            @media (max-width: 400px){
+                font-size: 13px;
+            }
         }
 
         &-span {
@@ -81,16 +120,21 @@
         &-cart {
             width: 7%;
             @include dfcc;
+            @media (max-width: 525px){
+                width: 15%;
+            }
+            @media (max-width: 525px){
+                width: 20%;
+            }
         }
 
         &-before {
             position: relative;
-          
+           
 
             &:before {
                 content: "4";
                 position: absolute;
-               
                 font-size: 10px;
                 line-height: 18px;
                 color: white;
@@ -101,11 +145,14 @@
                 background-color: $secondary-accent;
                 border-radius: 50%;
                 text-align: center;
-    
             }
         }
 
-        
+        &-beforedeg{
+            &:hover{
+                transform: rotate(5deg);
+            }
+        }
     }
 
     &__input {
@@ -126,11 +173,16 @@
 
     &__menu {
         background: #faf7f7;
-
+       
+        
         &-list {
             padding: 0 5px;
             display: flex;
             justify-content: space-between;
+            @media (max-width: 960px) {
+                flex-wrap: wrap;
+                text-align: center;
+            }
         }
         &-item {
             position: relative;
@@ -138,6 +190,13 @@
             &:hover ul {
                 display: block;
                 transition: 1s;
+            }
+            @media (max-width: 960px) {
+                width: 25%;
+            }
+            @media (max-width: 700px) {
+                width: 50%;
+                
             }
         }
 
@@ -154,6 +213,14 @@
             line-height: 22px;
             color: $dark;
             padding: 16px 0;
+            white-space: nowrap;
+            //transform: rotate(180deg);
+            transition: 0.8s ease-out;
+            @media (max-width: 700px) {
+
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
 
             &:hover .header__menu-arrow {
                 transform: rotate(180deg);
@@ -176,7 +243,10 @@
             top: 100%;
             display: none;
             padding: 0;
+            background: #faf7f7;
+            z-index: 1;
+            @media (max-width: 960px) {
+            }
         }
     }
 }
-
