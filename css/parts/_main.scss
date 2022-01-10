@@ -93,6 +93,8 @@ main{
         &:last-child {
             margin-right: 0;
         }
+       
+      
     }
 
     &__cards-title {
@@ -139,19 +141,32 @@ main{
         }
         img {
             object-fit: cover;
+           
+           
         }
+    }
+    &__cards-imgwr{
+        position: relative;
+        padding: 0 0 100% 0;
     }
 
     &__cards-img {
-        width: 100%;
-        height: 180px;
+        max-width: 100%;
+        height: 100%;
+        //height: inherit;
+        //height: auto;
         overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;      
     }
 
+   
+
     &__cards-selling {
+      
         padding: 16px;
         width: 30%;
-       
         height: 100%;
         left: 300px;
         top: 0px;
@@ -159,6 +174,7 @@ main{
         border: 1px solid #d1d1d1;
         box-sizing: border-box;
         border-radius: 12px;
+        
         &:last-child{
             margin-right: 0;
         }
@@ -205,3 +221,30 @@ main{
         padding: 6px 12px;
     }
 }
+
+
+.test {
+    display:inline-block;
+    line-height: 20px;
+  }
+  
+  
+  
+//  .gradient:after {
+//        position: absolute;
+//      right: 0;
+//      bottom: 0;
+//      width: 50%;
+//      height: 20px;
+//      content: " ";
+//      background-color: transparent;
+//      background-image: -webkit-gradient(linear,left top, right top,from(rgba(255,255,255,0)),color-stop(50%, #161616));
+//      background-image: -webkit-linear-gradient(left,rgba(255,255,255,0),#ffffff 50%);
+//      background-image: -o-linear-gradient(left,rgba(255,255,255,0),#ffffff 50%);
+//      background-image: linear-gradient(to right,rgba(255,255,255,0),#ffffff 50%);
+//  }
+  
+
+//  .proba{
+//      position: relative;
+//  }
