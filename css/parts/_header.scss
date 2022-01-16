@@ -1,27 +1,19 @@
 .header {
     &__top {
         padding: 16px 0;
-        @media (max-width: 525px){
+        @media (max-width: 525px) {
             flex-direction: column;
         }
 
         @include dfcc;
-
-        //&-left {
-        //    width: 35%;
-        //}
-
-        //&-right {
-        //    width: 20%;
-        //}
 
         &-list {
             @include dfcc;
             @include anone;
         }
 
-        &-listleft{
-            @media (max-width: 400px){
+        &-listleft {
+            @media (max-width: 400px) {
                 flex-direction: column;
             }
         }
@@ -52,24 +44,22 @@
         @include dfcc;
         padding-top: 40px;
         padding-bottom: 48px;
-        @media (max-width: 525px){
+        @media (max-width: 525px) {
             flex-direction: column;
         }
-        @media (max-width: 400px){
+        @media (max-width: 400px) {
             padding-top: 30px;
             padding-bottom: 30px;
         }
 
-        &-logo{
-            @media (max-width: 800px){
+        &-logo {
+            @media (max-width: 800px) {
                 padding-right: 15px;
                 width: 100%;
             }
-            @media (max-width: 525px){
+            @media (max-width: 525px) {
                 padding-right: 0;
             }
-            
-
         }
 
         &-list {
@@ -85,10 +75,10 @@
             background: #f9f9f9;
             border: 1px solid #d1d1d1;
             border-radius: 12px;
-            @media (max-width: 800px){
+            @media (max-width: 800px) {
                 margin-right: 15px;
             }
-            @media (max-width: 525px){
+            @media (max-width: 525px) {
                 margin-right: 0;
                 margin-top: 15px;
                 margin-bottom: 15px;
@@ -107,7 +97,7 @@
             max-width: 130px;
             appearance: none;
             background: url(/img/Header/Vector.png) no-repeat right;
-            @media (max-width: 400px){
+            @media (max-width: 400px) {
                 font-size: 13px;
             }
         }
@@ -120,17 +110,16 @@
         &-cart {
             width: 7%;
             @include dfcc;
-            @media (max-width: 525px){
+            @media (max-width: 525px) {
                 width: 15%;
             }
-            @media (max-width: 525px){
+            @media (max-width: 525px) {
                 width: 20%;
             }
         }
 
         &-before {
             position: relative;
-           
 
             &:before {
                 content: "4";
@@ -148,9 +137,11 @@
             }
         }
 
-        &-beforedeg{
-            &:hover{
+        &-beforedeg {
+            &:hover {
                 transform: rotate(5deg);
+                position: relative;
+                z-index: -1;
             }
         }
     }
@@ -173,8 +164,7 @@
 
     &__menu {
         background: #faf7f7;
-       
-        
+
         &-list {
             padding: 0 5px;
             display: flex;
@@ -196,7 +186,6 @@
             }
             @media (max-width: 700px) {
                 width: 50%;
-                
             }
         }
 
@@ -217,7 +206,6 @@
             //transform: rotate(180deg);
             transition: 0.8s ease-out;
             @media (max-width: 700px) {
-
                 padding-top: 10px;
                 padding-bottom: 10px;
             }
@@ -250,3 +238,21 @@
         }
     }
 }
+
+
+//&::before {
+//    content: "- 36 %";
+//    position: absolute;
+//    left: 30px;
+//    z-index: 1;
+//    font-family: Poppins;
+//    font-style: normal;
+//    font-weight: 600;
+//    font-size: 12px;
+//    line-height: 18px;
+//    color: #6a983c;
+//    align-items: center;
+//    padding: 0px 8px;
+//    background: #f4f8ec;
+//    border-radius: 12px;
+//}

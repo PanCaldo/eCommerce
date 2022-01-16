@@ -146,8 +146,11 @@ main{
         }
     }
     &__cards-imgwr{
+        
         position: relative;
-        padding: 0 0 100% 0;
+        padding: 0 0 77% 0;
+      
+        
     }
 
     &__cards-img {
@@ -159,6 +162,7 @@ main{
         position: absolute;
         top: 0;
         left: 0;      
+        border-radius: 10px;
     }
 
    
@@ -168,8 +172,7 @@ main{
         padding: 16px;
         width: 30%;
         height: 100%;
-        left: 300px;
-        top: 0px;
+       
         background: #ffffff;
         border: 1px solid #d1d1d1;
         box-sizing: border-box;
@@ -229,22 +232,12 @@ main{
   }
   
   
-  
-//  .gradient:after {
-//        position: absolute;
-//      right: 0;
-//      bottom: 0;
-//      width: 50%;
-//      height: 20px;
-//      content: " ";
-//      background-color: transparent;
-//      background-image: -webkit-gradient(linear,left top, right top,from(rgba(255,255,255,0)),color-stop(50%, #161616));
-//      background-image: -webkit-linear-gradient(left,rgba(255,255,255,0),#ffffff 50%);
-//      background-image: -o-linear-gradient(left,rgba(255,255,255,0),#ffffff 50%);
-//      background-image: linear-gradient(to right,rgba(255,255,255,0),#ffffff 50%);
-//  }
-  
-
-//  .proba{
-//      position: relative;
-//  }
+  .noprice{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+   text-decoration-line: line-through;
+   color: #A9A9A9;
+    
+  }

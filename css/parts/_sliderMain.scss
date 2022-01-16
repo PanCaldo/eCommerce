@@ -1,0 +1,104 @@
+.slider {
+    padding-top: 142px;
+    padding-left: 0;
+    padding-right: 0;
+
+    &-wrapp{
+        padding-bottom: 150px;
+    }
+
+    &__top {
+        padding-right: 15px;
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-title {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: $dark;
+        }
+
+        &-button {
+            padding: 6px 12px;
+            background: #ffffff;
+            border-radius: 12px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            color: #151515;
+            border: none;
+        }
+    }
+
+    &-cards {
+        text-align: center;
+        padding: 24px 32px 40px 32px;
+        position: relative;
+        background: #ffffff;
+        border: 1px solid #f1f1f1;
+        box-sizing: border-box;
+        border-radius: 12px;
+      
+
+        &::after {
+            content: url(/img/main/fotoslider.png);
+            position: absolute;
+            bottom: -31px;
+            left: 40%;
+        }
+    }
+
+    &-text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        color: #151515;
+        margin-bottom: 32px;
+        margin-top: 0;
+       
+    }
+
+    &-name {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #a9a9a9;
+    }
+
+    &-wrapp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.swiper {
+    //width: 1260px;
+    //    height: 228px;
+        //height: 100%;
+      
+    
+}
+
+.swiper-wrapper {
+    padding: 33px 0 64px 0;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: space-around;
+    
+}
+

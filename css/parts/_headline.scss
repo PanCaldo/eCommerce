@@ -1,0 +1,40 @@
+.headline {
+    padding-top: 134px;
+}
+
+.headline__wrapp {
+    display: flex;
+    margin-top: 37px;
+}
+
+.headline-img {
+    object-fit: cover;
+}
+.sell-card {
+    position: relative;
+    &:last-child {
+        margin-right: 0;
+    }
+    &::before {
+        content: "- 36 %";
+        position: absolute;
+        left: 30px;
+        z-index: 1;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6a983c;
+        align-items: center;
+        padding: 0px 8px;
+        background: #f4f8ec;
+        border-radius: 12px;
+        top: 20px;
+    }
+}
+
+.card-mr{
+    margin-right: 10px;
+   
+}
