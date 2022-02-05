@@ -1,0 +1,38 @@
+.header__bottom{
+    padding-top: 15px;
+    padding-bottom: 24px;
+}
+
+.breadcrumb {
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    &-item {
+        list-style: none;
+        padding-right: 5px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #151515;
+    }
+
+    &-link {
+        text-decoration: none;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #a9a9a9;
+    }
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+
+  

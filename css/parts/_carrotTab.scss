@@ -1,0 +1,136 @@
+.tab-hidden {
+  display: none;
+}
+
+.tab {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #151515;
+    border-bottom: 2px solid rgba(91, 88, 88, 0.258);
+    &:last-child {
+      margin-right: 0;
+    }
+    &-two {
+      position: relative;
+      &:after {
+        content: "18";
+        position: absolute;
+        padding: 0px 8px;
+        width: 29px;
+        height: 18px;
+        background: #f4f8ec;
+        border-radius: 12px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6a983c;
+        left: 105%;
+        bottom: 17%;
+      }
+    }
+    &-three {
+      position: relative;
+      &:after {
+        content: "4";
+        position: absolute;
+        padding: 0px 0px 0 9px;
+        width: 29px;
+        height: 18px;
+        background: #f4f8ec;
+        border-radius: 12px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6a983c;
+        left: 105%;
+        bottom: 17%;
+      }
+    }
+  }
+
+
+
+  &__item-active {
+    border-bottom: 3px green solid;
+  }
+  
+
+
+  &__body {
+  }
+
+
+
+  &__content {
+  }
+}
+.tabs {
+
+  &__body-title {
+    margin-top: 48px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151515;
+  }
+
+  &__body-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #151515;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+
+th{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.156);
+  padding: 10px 0;
+}
+.th-center {
+  text-align: start;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+
+}
+
+td {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #575757;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 104px;
+  text-align: start;
+  
+}

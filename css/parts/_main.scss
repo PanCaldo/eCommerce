@@ -132,7 +132,9 @@ main{
     }
 
     &__section-wrapperselling {
-
+        &-wrapp{
+            padding-top: 85px;
+        }
         display: flex;
         justify-content: space-between;
         margin-bottom: 84px;
@@ -140,9 +142,7 @@ main{
             margin-bottom: 0;
         }
         img {
-            object-fit: cover;
-           
-           
+            object-fit: cover;    
         }
     }
     &__cards-imgwr{
@@ -223,6 +223,12 @@ main{
         color: #ffffff;
         padding: 6px 12px;
     }
+}
+
+.indexthree-wrapp{
+    display: flex;
+   
+    justify-content: space-between;
 }
 
 

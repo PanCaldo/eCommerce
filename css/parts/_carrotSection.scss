@@ -1,0 +1,183 @@
+.carrot__container {
+    display: flex;
+    justify-content: space-between;
+}
+.img__wrapper {
+    max-width: 569px;
+    width: 100%;
+    position: relative;
+    &:before {
+        content: "-36%";
+        position: absolute;
+        padding: 4px 10px;
+        height: 18px;
+        background: #f4f8ec;
+        border-radius: 12px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6a983c;
+        top: 16px;
+        left: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &:after {
+        content: "Free shipping";
+        position: absolute;
+        padding: 4px 10px;
+        height: 18px;
+        background: #f4f8ec;
+        border-radius: 12px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6a983c;
+        top: 16px;
+        left: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.carrot__img {
+    border-radius: 12px;
+    max-width: 569px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.carrot__info {
+    max-width: 569px;
+}
+.carrot__info-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    color: #151515;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.sort__center-label {
+    margin-left: 0;
+}
+.carrot__info-riview {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a9a9a9;
+}
+.carrot__info-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 23px;
+    color: #151515;
+}
+.carrot__info-textmargin {
+    margin-top: 42px;
+    margin-bottom: 40px;
+}
+.carrot__info-inf {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+.maintwo__itemdata-white {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #a9a9a9;
+}
+
+.maintwo__itemdata-black {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #151515;
+}
+
+.maintwo__list-data2 {
+    padding-left: 39px;
+}
+.carrot__info-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 16px;
+    border: 1px solid #f5f5f5;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.maintwo__itemprice-usdgr {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: #6a983c;
+    position: relative;
+}
+.maintwo__itemprice-usdgr::before {
+    content: "48.56";
+    position: absolute;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration-line: line-through;
+    color: #a9a9a9;
+    top: 35px;
+}
+.chek-carrot {
+    width: 111px;
+    height: 48px;
+}
+.sort__center-span {
+}
+.sort__center-chek-carrot {
+    padding-left: 6px;
+}
+.price__carrot-btn {
+    width: 140px;
+    height: 48px;
+    margin: 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 22px;
+    color: #ffffff;
+}
+.price__carrot-btn:hover {
+    background: rgb(92, 165, 18);
+}
+.carrot__wish-btn {
+    margin-top: 40px;
+    align-items: center;
+    padding: 6px 12px;
+    border: none;
+    background: #ffffff;
+    border-radius: 12px;
+}
+.footer__nav-padding {
+    margin-top: 70px;
+}
