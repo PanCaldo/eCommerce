@@ -1,0 +1,157 @@
+.indexfive {
+    padding-top: 56px;
+    padding-bottom: 81px;
+    width: 100%;
+}
+
+.indexfive__cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.indexfive__card {
+    max-width: 569px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.indexfive__card:last-child {
+    margin-right: 0;
+}
+.indexfive__blocks-wrapp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.indexfive__section-wrapperselling-wrapp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__aside-indexfive {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #a9a9a9;
+}
+
+
+
+.aside__category-indexfive {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6a983c;
+}
+
+.aside__category-itemfive {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #a9a9a9;
+}
+
+.indexfive__input-wrapp {
+    max-width: 269px;
+    display: flex;
+    padding: 11px 21px;
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    justify-content: space-between;
+    margin: 0;
+    text-align: center;
+}
+
+.indexfeve__input {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #a9a9a9;
+    border: none;
+    background: #f9f9f9;
+    outline: none;
+    max-width: 100%;
+    width: 121px;
+    margin: 0;
+}
+
+.indexfeve__input-btn {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151515;
+    border: none;
+    background: none;
+    padding-top: 2px;
+}
+
+.main__indexfive-wrapp {
+    padding: 80px 0 0 0;
+    max-width: 100%;
+    width: 871px;
+    margin-right: 0;
+}
+
+.main__indexfive-wr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__indexfive-card {
+    max-width: 269px;
+    margin-right: 5px;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.main__indexfive-card:hover {
+    transform: scale(1.01);
+}
+
+.main__indexfive-card:last-child {
+    margin-right: 0;
+}
+
+.aside__indexfive {
+    max-width: 100%;
+    width: 269px;
+    margin-left: 0;
+}
+
+.main__indexfive-img {
+    max-width: 100%;
+}
+
+.main__indexfive-tag {
+    background: #f4f8ec;
+    width: 40px;
+    height: 18px;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 8px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: #6a983c;
+}
+
+.main__indexfive-titlemr{
+    margin-bottom: 16px;
+}

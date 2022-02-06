@@ -93,8 +93,6 @@ main{
         &:last-child {
             margin-right: 0;
         }
-       
-      
     }
 
     &__cards-title {
@@ -146,12 +144,10 @@ main{
         }
     }
     &__cards-imgwr{
-        
         position: relative;
         padding: 0 0 77% 0;
-      
-        
     }
+
 
     &__cards-img {
         max-width: 100%;
@@ -168,18 +164,18 @@ main{
    
 
     &__cards-selling {
-      
         padding: 16px;
         width: 30%;
         height: 100%;
-       
         background: #ffffff;
         border: 1px solid #d1d1d1;
         box-sizing: border-box;
         border-radius: 12px;
-        
         &:last-child{
             margin-right: 0;
+        }
+        &:hover{
+            transform: scale(1.01);
         }
     }
 

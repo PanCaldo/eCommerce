@@ -70,7 +70,7 @@
                 background: inherit;
             }
         }
-        &-label {
+        &-label  {
             font-family: Open Sans;
             font-style: normal;
             font-weight: normal;
@@ -78,7 +78,7 @@
             line-height: 19px;
             color: $dark;
             margin-right: 8px;
-            margin-left: 10px;
+            margin-left: 10px; 
             &:last-child {
                 margin-right: 0;
             }
@@ -97,4 +97,8 @@
             margin: 0;
         }
     }
+}
+
+.brands-input{
+    margin-right: 10px;
 }
