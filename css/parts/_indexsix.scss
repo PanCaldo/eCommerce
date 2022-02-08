@@ -1,0 +1,252 @@
+.indexsix__container{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    &__containertwo {
+        width: 100%;
+        max-width: 670px;
+    }
+
+    &__indexsix {
+    }
+
+    &__billing {
+    }
+
+    &__billing-item {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: #151515;
+        margin-bottom: 0;
+    }
+
+    &__billing-spans {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #a9a9a9;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+
+    &__billing-span {
+    }
+
+    &__inputs-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+
+    &__input-inner {
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+        max-height: 112%;
+    }
+    &__input-innertxt {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__label {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #151515;
+    }
+
+    &__input {
+        background: #f9f9f9;
+        border: 1px solid #d1d1d1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 11px 12px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #a9a9a9;
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    &__input-box {
+        margin-bottom: 0;
+        margin-right: 5px;
+        width: 10%;
+    }
+
+    &__input-checkbox {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 12px;
+        background: #f9f9f9;
+        border: 1px solid #d1d1d1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        width: 47%;
+    }
+
+    &__label-box {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #151515;
+    }
+
+    &__method {
+        padding-bottom: 60px;
+    }
+
+    &__billing-fdx {
+        background: #f9f9f9;
+        border: 1px solid #d1d1d1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
+
+    &__billing-fdxone {
+        margin-bottom: 12px;
+    }
+
+    &__billing-usd {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6a983c;
+    }
+
+    &__billing-price {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #151515;
+    }
+
+    &__payment {
+        padding-bottom: 60px;
+    }
+
+    &__visa {
+        background: #ffffff;
+        border: 1px solid #d1d1d1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 12px;
+    }
+
+    &__input-innervisa {
+        display: flex;
+    }
+
+    &__input-innercard {
+        width: 100%;
+        max-width: 350px;
+        margin-right: 53px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__input-innerday {
+        width: 100%;
+        max-width: 120px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__input-innercvc {
+        width: 100%;
+        max-width: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__checkbox-confirmatoin {
+        width: 90%;
+        margin-bottom: 12px;
+    }
+
+    &__additional {
+        padding-bottom: 60px;
+    }
+
+    &__confirmator {
+    }
+
+    &__input-link {
+    }
+
+    &__input-btn {
+        padding: 12px 48px;
+        background: #6a983c;
+        border: 2px solid #46760a;
+        box-sizing: border-box;
+        border-radius: 12px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: right;
+        color: #ffffff;
+        margin-bottom: 40px;
+    }
+
+    &__indexsix-footer {
+    }
+}
+.info-item {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #151515;
+}
+.info-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a9a9a9;
+}
+
+textarea {
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.shieil-btn {
+    display: block;
+}
