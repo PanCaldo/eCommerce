@@ -234,26 +234,10 @@
             padding: 0px;
             background: #faf7f7;
             z-index: 1;
+            white-space: nowrap;
             @media (max-width: 960px) {
             }
         }
     }
 }
 
-
-//&::before {
-//    content: "- 36 %";
-//    position: absolute;
-//    left: 30px;
-//    z-index: 1;
-//    font-family: Poppins;
-//    font-style: normal;
-//    font-weight: 600;
-//    font-size: 12px;
-//    line-height: 18px;
-//    color: #6a983c;
-//    align-items: center;
-//    padding: 0px 8px;
-//    background: #f4f8ec;
-//    border-radius: 12px;
-//}
