@@ -605,6 +605,13 @@ main {
   }
 }
 
+@media (max-width: 375px) {
+  .main__aside-button {
+    font-size: 10px;
+    padding: 5px 6px 5px 6px;
+  }
+}
+
 .main__aside-button:hover {
   color: #626262;
   color: #6a983c;
@@ -870,6 +877,13 @@ main {
 @media (max-width: 478px) {
   .main__cards-selling {
     width: 49%;
+  }
+}
+
+@media (max-width: 450px) {
+  .main__cards-selling {
+    padding: 6px;
+    margin-right: 3px;
   }
 }
 
@@ -1802,6 +1816,15 @@ footer {
 @media (max-width: 512px) {
   .sell-card::before {
     font-size: 9px;
+  }
+}
+
+@media (max-width: 430px) {
+  .sell-card::before {
+    font-size: 9px;
+    padding: 0px 5px;
+    top: 7px;
+    left: 6px;
   }
 }
 

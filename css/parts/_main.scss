@@ -101,6 +101,10 @@ main {
             font-size: 12px;
             padding: 7px 9px 7px 9px;
         }
+        @media (max-width: 375px) {
+            font-size: 10px;
+            padding: 5px 6px 5px 6px;
+        }
 
         &:hover {
             color: lighten($dark, 30%);
@@ -289,6 +293,10 @@ main {
         }
         @media (max-width: 478px) {
             width: 49%;
+        }
+        @media (max-width: 450px) {
+            padding: 6px;
+            margin-right: 3px;
         }
         &:last-child {
             margin-right: 0;
