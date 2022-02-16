@@ -1,9 +1,8 @@
-main{
-    padding-bottom: 200px;
+main {
+    padding-bottom: 100px;
 }
 
 .main {
-
     &__container {
         display: flex;
         justify-content: space-between;
@@ -16,6 +15,12 @@ main{
 
     &__aside-navpad {
         margin-bottom: 128px;
+        @media (max-width: 890px) {
+            margin-bottom: 90px;
+        }
+        @media (max-width: 550px) {
+         margin-bottom: 65px;
+        }
     }
 
     &__aside-title {
@@ -25,18 +30,37 @@ main{
         font-size: 18px;
         line-height: 27px;
         color: $dark;
-        white-space: nowrap;
+      
+        @media (max-width: 550px) {
+            white-space: nowrap;
+        }
+       
     }
 
     &__aside-menu {
         padding: 0;
         margin-top: 16px;
         margin-bottom: 48px;
+        white-space: nowrap;
+        @media (max-width: 984px) {
+            margin-bottom: 28px;
+            margin-top: 11px;
+            margin-bottom: 16px;
+        }
     }
+
+    &__aside-none{
+        @media (max-width: 560px) {
+            display: none;
+    }
+}
 
     &__aside-item {
         list-style: none;
         margin-bottom: 5px;
+        @media (max-width: 700px) {
+            margin-bottom: 0;;
+        }
         &:last-child {
             margin-bottom: 0;
         }
@@ -50,6 +74,9 @@ main{
         font-size: 14px;
         text-decoration-line: underline;
         color: $accent;
+        &:hover {
+            color: #92c064;
+        }
     }
 
     &__aside-button {
@@ -64,23 +91,47 @@ main{
         font-size: 15px;
         line-height: 22px;
         color: $dark;
-        margin: 0px 6px;
+        //margin: 0px 6px;
         padding: 12px 20px 12px 16px;
         white-space: nowrap;
+        @media (max-width: 860px) {
+            font-size: 14px;
+        }
+        @media (max-width: 758px) {
+            font-size: 12px;
+            padding: 7px 9px 7px 9px;
+        }
+
+        &:hover {
+            color: lighten($dark, 30%);
+            color: $accent;
+        }
     }
 
     &__arrow-right {
-        width: 3px;
-        height: 6px;
+        width: 6px;
+        height: 10px;
         margin-left: 12px;
+        @media (max-width: 650px) {
+            margin-left: 8px;
+        }
     }
 
     &__section {
         padding-top: 64px;
         width: 75%;
+        &-first{
+            @media (max-width: 550px) {
+                width: 68%;
+            }
+            @media (max-width: 430px) {
+                width: 64%;
+            }
+        }
 
         &-wrappercategory {
             display: flex;
+            
         }
     }
     &__cards-category {
@@ -90,8 +141,25 @@ main{
         margin-right: 30px;
         margin-bottom: 128px;
         padding: 48px 0 32px 29px;
+        border: 0.5px solid rgb(211, 236, 207);
+        border-radius: 12px;
+        @media (max-width: 860px) {
+            margin-right: 16px;
+        }
+        @media (max-width: 800px) {
+            margin-bottom: 90px;
+        }
+        @media (max-width: 650px) {
+            margin-right: 0;
+        }
+        @media (max-width: 550px) {
+            margin-bottom: 65px;
+           }
         &:last-child {
             margin-right: 0;
+            @media (max-width: 650px) {
+                display: none;
+            }
         }
     }
 
@@ -104,6 +172,21 @@ main{
         color: $accent;
     }
 
+    &__cards-price{
+        @media (max-width: 950px) {
+            font-size: 12px;
+        }
+        @media (max-width: 790px) {
+            font-size: 11px;
+        }
+        @media (max-width: 715px) {
+            font-size: 10px;
+        }
+        @media (max-width: 512px) {
+            font-size: 9px;
+        }
+    }
+
     &__cards-text {
         font-family: Poppins;
         font-style: normal;
@@ -113,6 +196,19 @@ main{
         color: $dark;
         margin-top: 8px;
         margin-bottom: 94px;
+        white-space: nowrap;
+        @media (max-width: 860px) {
+            margin-bottom: 74px;
+        }
+        @media (max-width: 758px) {
+            font-size: 20px;
+        }
+        @media (max-width: 550px) {
+            margin-bottom: 28px;
+        }
+        @media (max-width: 424px) {
+            font-size: 15px;
+        }
     }
 
     &__cards-button {
@@ -123,6 +219,13 @@ main{
         border-radius: 12px;
         background: transparent;
         margin: 0;
+        @media (max-width: 430px) {
+            padding: 7px 8px;
+            font-size: 11px;
+        }
+        &:hover {
+            color: $accent;
+        }
     }
 
     &__cards-arrowgreen {
@@ -130,24 +233,33 @@ main{
     }
 
     &__section-wrapperselling {
-        &-wrapp{
+        &-wrapp {
             padding-top: 85px;
         }
         display: flex;
         justify-content: space-between;
         margin-bottom: 84px;
-        &:last-child{
+        &:last-child {
             margin-bottom: 0;
         }
+        @media (max-width: 626px) {
+            display: flex;
+            justify-content: space-around;
+        }
+        @media (max-width: 440px) {
+            justify-content: flex-end;
+        }
+        //@media (max-width: 430px) {
+        //    justify-content: space-between;
+        //}
         img {
-            object-fit: cover;    
+            object-fit: cover;
         }
     }
-    &__cards-imgwr{
+    &__cards-imgwr {
         position: relative;
         padding: 0 0 77% 0;
     }
-
 
     &__cards-img {
         max-width: 100%;
@@ -157,11 +269,9 @@ main{
         overflow: hidden;
         position: absolute;
         top: 0;
-        left: 0;      
+        left: 0;
         border-radius: 10px;
     }
-
-   
 
     &__cards-selling {
         padding: 16px;
@@ -171,11 +281,32 @@ main{
         border: 1px solid #d1d1d1;
         box-sizing: border-box;
         border-radius: 12px;
-        &:last-child{
+        @media (max-width: 840px) {
+            padding: 11px;
+        }
+        @media (max-width: 626px) {
+         width: 41%;
+        }
+        @media (max-width: 478px) {
+            width: 49%;
+        }
+        &:last-child {
             margin-right: 0;
         }
-        &:hover{
+        &:hover {
             transform: scale(1.01);
+        }
+    }
+
+    &__cards-width{
+        @media (max-width: 440px) {
+            width: 95%;
+        }
+    }
+
+    &__cards-none{
+        @media (max-width: 626px) {
+            display: none;
         }
     }
 
@@ -188,6 +319,16 @@ main{
         color: $dark;
         margin-bottom: 4px;
         margin-top: 16px;
+        @media (max-width: 790px) {
+            font-size: 14px;
+            margin-top: 11px;
+        }
+        @media (max-width: 715px) {
+           margin-bottom: 2px;
+        }
+        @media (max-width: 515px) {
+            font-size: 13px;
+           }
     }
 
     &__cards-about {
@@ -199,6 +340,13 @@ main{
         color: #575757;
         margin-top: 0;
         margin-bottom: 16px;
+        @media (max-width: 790px) {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 512px) {
+            margin-bottom: 4px;
+            font-size: 11px;
+           }
     }
 
     &__cards-paywrapp {
@@ -218,28 +366,57 @@ main{
         line-height: 22px;
         color: #ffffff;
         padding: 6px 12px;
+        @media (max-width: 950px) {
+            font-size: 12px;
+        }
+        @media (max-width: 790px) {
+            font-size: 10px;
+        }
+        @media (max-width: 715px) {
+            font-size: 9px;
+            padding: 1px  7px;
+        }
+        @media (max-width: 512px) {
+            font-size: 9px;
+            padding: 0 4px;
+        }
+        @media (max-width: 400px) {
+            padding: 0 7px;
+        }
+        &:hover {
+            background: #ffffff;
+            color: #6a983c;
+        }
+    }
+    &__cards-btnnone{
+        @media (max-width: 400px) {
+            display: none;
+        }
     }
 }
 
-.indexthree-wrapp{
+.indexthree-wrapp {
     display: flex;
-   
+
     justify-content: space-between;
 }
 
-
 .test {
-    display:inline-block;
+    display: inline-block;
     line-height: 20px;
-  }
-  
-  
-  .noprice{
+}
+
+.noprice {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
-   text-decoration-line: line-through;
-   color: #A9A9A9;
-    
-  }
+    text-decoration-line: line-through;
+    color: #a9a9a9;
+}
+
+.title__br {
+    @media (max-width: 550px) {
+        display: none;
+    }
+}

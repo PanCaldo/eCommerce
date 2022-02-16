@@ -177,6 +177,7 @@
         &-item {
             position: relative;
             list-style: none;
+            padding-right: 5px;
             &:hover ul {
                 display: block;
                 transition: 1s;
@@ -230,7 +231,7 @@
             left: 0;
             top: 100%;
             display: none;
-            padding: 0;
+            padding: 0px;
             background: #faf7f7;
             z-index: 1;
             @media (max-width: 960px) {

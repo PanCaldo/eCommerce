@@ -1,11 +1,19 @@
 .carrot__container {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 675px) {
+        flex-direction: column;
+       }
 }
 .img__wrapper {
     max-width: 569px;
-    width: 100%;
+    //width: 100%;
     position: relative;
+    margin-right: 10px;
+    @media (max-width: 675px) {
+        text-align: center;
+        margin-right: 0;
+        }
     &:before {
         content: "-36%";
         position: absolute;
@@ -50,6 +58,11 @@
     max-width: 569px;
     width: 100%;
     margin-bottom: 32px;
+    &-none{
+        @media (max-width: 675px) {
+           display: none;
+           }
+    }
 }
 
 .carrot__info {
@@ -113,6 +126,9 @@
 
 .maintwo__list-data2 {
     padding-left: 39px;
+    @media (max-width: 870px) {
+        padding-left: 12px;
+     }
 }
 .carrot__info-price {
     display: flex;
@@ -132,6 +148,9 @@
     line-height: 39px;
     color: #6a983c;
     position: relative;
+    @media (max-width: 781px) {
+font-size: 14px;
+       }
 }
 .maintwo__itemprice-usdgr::before {
     content: "48.56";
@@ -149,7 +168,10 @@
 }
 .chek-carrot {
     width: 111px;
-    height: 48px;
+    @media (max-width: 781px) {
+        padding-top: 4px;
+        padding-bottom: 4px;
+       }
 }
 .sort__center-span {
 }
@@ -157,8 +179,6 @@
     padding-left: 6px;
 }
 .price__carrot-btn {
-    width: 140px;
-    height: 48px;
     margin: 0;
     font-family: Poppins;
     font-style: normal;
@@ -168,7 +188,8 @@
     color: #ffffff;
 }
 .price__carrot-btn:hover {
-    background: rgb(92, 165, 18);
+    background: #ffffff;
+    color: $accent;
 }
 .carrot__wish-btn {
     margin-top: 40px;

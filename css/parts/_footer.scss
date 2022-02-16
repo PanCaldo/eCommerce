@@ -9,6 +9,14 @@ footer{
 .footer__nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    &-nav{
+        @media (max-width: 629px) {
+            width: 49%;
+            text-align: center;
+         }
+    }
 
     &-navpad {
         margin-bottom: 128px;
@@ -45,8 +53,10 @@ footer{
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-
         color: $accent;
+        &:hover{
+            color: lighten($accent, 10%);
+        }
     }
 }
 

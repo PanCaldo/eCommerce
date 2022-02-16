@@ -31,8 +31,27 @@
         background: #f4f8ec;
         border-radius: 12px;
         top: 20px;
+        @media (max-width: 900px) {
+            left: 14px;
+        }
+        @media (max-width: 512px) {
+            font-size: 9px;
+        }
     }
 }
+
+.sell-cardnone {
+    @media (max-width: 597px) {
+        display: none;
+    }
+}
+
+.sell-cardnonetwo {
+    @media (max-width: 440px) {
+        display: none;
+    }
+}
+
 
 .card-mr{
     margin-right: 10px;

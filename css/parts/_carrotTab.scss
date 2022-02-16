@@ -41,26 +41,7 @@
         bottom: 17%;
       }
     }
-    &-three {
-      position: relative;
-      &:after {
-        content: "4";
-        position: absolute;
-        padding: 0px 0px 0 9px;
-        width: 29px;
-        height: 18px;
-        background: #f4f8ec;
-        border-radius: 12px;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        color: #6a983c;
-        left: 105%;
-        bottom: 17%;
-      }
-    }
+   
   }
 
 

@@ -38,6 +38,12 @@
         align-items: flex-start;
         justify-content: space-between;
         margin-top: 39px;
+        @media (max-width: 966px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
     }
 
     &__left-wrapp {
@@ -56,6 +62,15 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        margin-right: 8px;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.0055);
+        }
+        @media (max-width: 966px) {
+            width: 83%;
+            margin: 0 0 20px 0;
+         }
         &-info {
             margin-top: 228px;
             margin-bottom: 8px;
@@ -86,6 +101,16 @@
             font-size: 22px;
             line-height: 33px;
             color: #ffffff;
+            @media (max-width: 1096px) {
+                font-size: 20px;
+            }
+            @media (max-width: 1032px) {
+                font-size: 18px;
+                margin-top: 180px;
+            }
+            @media (max-width: 1000px) {
+                font-size: 16px;
+            }
         }
 
         &-author {
@@ -129,6 +154,18 @@
     }
 
     &__centr {
+        cursor: pointer;
+        margin-right: 8px;
+        @media (max-width: 966px) {
+            min-width: 40%;
+         }
+         @media (max-width: 637px) {
+            min-width: 82%;
+            margin-right: 0;
+         }
+        &:hover{
+            transform: scale(1.0055);
+        }
         &-tag {
             font-family: Poppins;
             font-style: normal;
@@ -138,6 +175,7 @@
             color: #6a983c;
             margin-top: 24px;
             margin-bottom: 8px;
+            
         }
 
         &-info {
@@ -148,6 +186,9 @@
             line-height: 27px;
             color: #151515;
             margin-bottom: 16px;
+            @media (max-width: 1096px) {
+                font-size: 16px;
+            }
         }
 
         &-img {
@@ -155,10 +196,20 @@
         }
     }
 
-    &-rightcards {
+    &__rightcards {
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.0055);
+        }
     }
 
     &__right {
+        @media (max-width: 966px) {
+            min-width: 40%;
+        }
+        @media (max-width: 637px) {
+            min-width: 82%;
+         }
         &-title {
             font-family: Poppins;
             font-style: normal;
@@ -169,9 +220,15 @@
             margin-bottom: 16px;
             margin-right: 48px;
             margin-top: 32px;
+            @media (max-width: 1096px) {
+                font-size: 13px;
+            }
+            @media (max-width: 966px) {
+                margin-top: 10;
+            }
+             }
             &:last-child {
                 margin-bottom: 0;
             }
-        }
     }
 }

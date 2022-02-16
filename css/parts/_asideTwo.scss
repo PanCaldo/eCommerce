@@ -2,6 +2,12 @@
     max-width: 268px;
     justify-content: space-between;
     padding-top: 80px;
+    @media (max-width: 910px) {
+        max-width: 200px;
+     }
+     @media (max-width: 516px) {
+        max-width: 150px;
+     }
 }
 
 .aside__category {
@@ -16,6 +22,9 @@
         font-size: 18px;
         line-height: 27px;
         color: #151515;
+        @media (max-width: 750px) {
+           font-size: 15px;
+        }
     }
     &-span {
         font-family: Poppins;
@@ -99,13 +108,15 @@
     padding: 12px 14px;
     color: #ffffff;
     margin: 0px 6px;
-    width: 78px;
-    height: 48px;
     background: #6a983c;
     border: 2px solid #46760a;
     box-sizing: border-box;
     border-radius: 12px;
     margin-right: 15px;
+    @media (max-width: 680px) {
+       margin: 0 6px;
+       padding: 8px 11px;
+     }
     &:hover {
         background: lighten(#6a983c, 20%);
     }
@@ -116,8 +127,6 @@
     padding: 10px 11px;
     color: #A9A9A9;
     margin: 0px 6px;
-    width: 70px;
-    height: 40px;
    background-color: #ffffff;
     border: 1px solid $secondary-accent;
     box-sizing: border-box;
@@ -125,6 +134,10 @@
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
+    @media (max-width: 680px) {
+        margin: 0 6px;
+        padding: 8px 11px;
+      }
     &:hover {
         color: $secondary-accent;
     }
@@ -132,72 +145,6 @@
 
 .buttonrange-wrapp {
     margin-top: 31px;
+    white-space: nowrap;
 }
 
-//.polzunok-container-5 * {
-//	box-sizing: border-box;
-//	outline: none;
-//}
-//.polzunok-container-5 {
-//	padding: 10px 16px;
-//	margin: 30px;
-//}
-//.polzunok-container-5:after {
-//	content: "";
-//	clear: both;
-//	display: table;
-//}
-//.polzunok-container-5 .ui-slider {
-//	position: relative;
-//	background: #BFE2FF;
-//	height: 10px;
-//	border-radius:10px;
-//	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(255, 255, 255, 1);
-//}
-//.polzunok-container-5 .ui-slider .ui-slider-handle {
-//    position: absolute;
-//    margin-left: -16px;
-//	width: 32px;
-//	height: 32px;
-//	cursor: pointer;
-//	border-radius: 50%;
-//	border: 4px solid #BFE2FF;
-//	top: -11px;
-//	background: #FFF;
-//	z-index: 2;
-//	box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
-//	transition: transform 0.2s, border 0.4s;
-//}
-//.polzunok-container-5 .ui-slider .ui-slider-handle:hover,
-//.polzunok-container-5 .ui-slider .ui-slider-handle:focus {
-//	transform: scale(1.2);
-//	border: 4px solid #337AB7;
-//}
-//.polzunok-input-5-left,
-//.polzunok-input-5-right {
-//	height: 32px;
-//	background: #FFF;
-//	border-radius: 28px;
-//	border: 4px solid #BFE2FF;
-//	text-align:center;
-//	font-size: 18px;
-//	padding: 16px;
-//	width: 140px;
-//	margin-top:30px;
-//	box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
-//}
-//.polzunok-input-5-left {
-//	float: left;
-//}
-//.polzunok-input-5-right {
-//	float: right;
-//}
-//.polzunok-container-5 .ui-slider .ui-slider-range {
-//	position: absolute;
-//	z-index: 1;
-//	height: 10px;
-//	border: 0;
-//	background: #337AB7;
-//	border-radius:10px;
-//	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 1px 1px 5px rgba(255, 255, 255, 1);
-//}

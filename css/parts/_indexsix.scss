@@ -2,6 +2,9 @@
 
     display: flex;
     justify-content: space-between;
+    @media (max-width: 645px) {
+        flex-direction: column-reverse;
+    }
 }
 
 .main {
@@ -12,6 +15,7 @@
     }
 
     &__indexsix {
+        padding-right: 10px;
     }
 
     &__billing {
@@ -102,6 +106,9 @@
         box-sizing: border-box;
         border-radius: 12px;
         width: 47%;
+        @media (max-width: 860px) {
+            width: 100%;
+        }
     }
 
     &__label-box {
@@ -166,6 +173,9 @@
 
     &__input-innervisa {
         display: flex;
+        @media (max-width: 704px) {
+            flex-direction: column;
+        }
     }
 
     &__input-innercard {

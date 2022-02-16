@@ -16,6 +16,12 @@
     margin-right: 10px;
 }
 
+.indexfive__cardnone{
+    @media (max-width: 590px) {
+        display: none;
+    }
+}
+
 .indexfive__card:last-child {
     margin-right: 0;
 }
@@ -38,8 +44,6 @@
     color: #a9a9a9;
 }
 
-
-
 .aside__category-indexfive {
     font-family: Open Sans;
     font-style: normal;
@@ -47,6 +51,9 @@
     font-size: 14px;
     line-height: 19px;
     color: #6a983c;
+    &:hover {
+        color: lighten(#6a983c, 10%);
+    }
 }
 
 .aside__category-itemfive {
@@ -57,6 +64,9 @@
     line-height: 19px;
     text-decoration-line: underline;
     color: #a9a9a9;
+    &:hover {
+        color: darken(#a9a9a9, 15%);
+    }
 }
 
 .indexfive__input-wrapp {
@@ -70,6 +80,9 @@
     justify-content: space-between;
     margin: 0;
     text-align: center;
+    @media (max-width: 871px) {
+        display: none;
+    }
 }
 
 .indexfeve__input {
@@ -104,11 +117,27 @@
     max-width: 100%;
     width: 871px;
     margin-right: 0;
+    @media (max-width: 549px) {
+
+        width: 100%;
+    max-width: 871px;
+    }
 }
+
 
 .main__indexfive-wr {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 549px) {
+        flex-direction: column;
+
+    }
+}
+
+.main__indexfive-wrnone {
+    @media (max-width: 549px) {
+        display: none;
+    }
 }
 
 .main__indexfive-card {
@@ -127,8 +156,8 @@
 }
 
 .aside__indexfive {
-    max-width: 100%;
-    width: 269px;
+    max-width: 269px;
+    margin-right: 10px;
     margin-left: 0;
 }
 
@@ -150,8 +179,18 @@
     margin-top: 24px;
     margin-bottom: 8px;
     color: #6a983c;
+    padding-left: 8px;
 }
 
-.main__indexfive-titlemr{
+.main__indexfive-titlemr {
     margin-bottom: 16px;
+}
+
+.main__indexfive-title {
+    @media (max-width: 871px) {
+        font-size: 15px;
+    }
+    @media (max-width: 800px) {
+        font-size: 15px;
+    }
 }
